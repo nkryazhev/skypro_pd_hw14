@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies from {{first_year}} to {{ second_year }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+{% for movie in movies %}
+    <div class=__item__genre>
+        <p><strong>Название:</strong> {{ movie["title"] }}</p>
+        <p><strong>Год выпуска:</strong> {{ movie["release_year"] }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>

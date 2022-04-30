@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ rating }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% for movie in movies %}
+        <div class=__item__rating>
+            <p><strong>Название:</strong> {{ movie["title"] }}</p>
+            <p><strong>Рейтинг:</strong> {{ movie["rating"] }}</p>
+            <p><strong>Описание:</strong> {{ movie["description"] }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

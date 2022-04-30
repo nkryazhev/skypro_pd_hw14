@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ movie["title"] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <p><strong>Название:</strong> {{ movie["title"] }}</p>
+    <p><strong>Страна:</strong> {{ movie["country"] }}</p>
+    <p><strong>Год выпуска:</strong> {{ movie["release_year"] }}</p>
+    <p><strong>Жанр:</strong> {{ movie["genre"] }}</p>
+    <p><strong>Описание:</strong> {{ movie["description"] }}</p>
+</body>
+</html>
